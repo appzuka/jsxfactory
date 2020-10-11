@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "outDir": "./build",
+        "strict": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "jsx": "react",
+        "jsxFactory": "JSXFactory.createElement",
+        "baseUrl": ".", // This must be specified if "paths" is.
+        "paths": {
+          "globals": ["./src/globals"], // This mapping is relative to "baseUrl"
+          "components/*": ["./src/components/*"], // This mapping is relative to "baseUrl"
+          "jsxFactories/*": ["./src/jsxFactories/*"], // This mapping is relative to "baseUrl"
+          "pages/*": ["./src/pages/*"] // This mapping is relative to "baseUrl"
+        }
+    },
+    "files": [
+      "./src/index.tsx"
+    ],
+    "include": [
+      "src/**/*.d.ts"
+    ]
+}
